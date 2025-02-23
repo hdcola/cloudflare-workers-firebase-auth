@@ -1,0 +1,40 @@
+{
+  "name": "cloudflare-workers-firebase-auth",
+  "version": "0.0.1",
+  "description": "Zero-dependencies firebase auth library for Cloudflare Workers.",
+  "author": "hdcola",
+  "license": "MIT",
+  "main": "dist/main/index.js",
+  "types": "dist/main/index.d.ts",
+  "module": "dist/main/index.js",
+  "files": [
+    "dist/**/*.{js,ts}",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "build": "deno run --allow-read --allow-write scripts/version.ts && run-p build:*",
+    "build:main": "tsc -p tsconfig.main.json",
+    "build:module": "tsc -p tsconfig.module.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdcola/cloudflare-workers-firebase-auth.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "firebase",
+    "auth"
+  ],
+  "bugs": {
+    "url": "https://github.com/hdcola/cloudflare-workers-firebase-auth/issues"
+  },
+  "homepage": "https://github.com/hdcola/cloudflare-workers-firebase-auth#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.7.3"
+  }
+}
