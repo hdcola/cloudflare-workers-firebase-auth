@@ -1,0 +1,5 @@
+{
+  "deno.codeLens.references": true,
+  "deno.enablePaths": ["./scripts"],
+  "deno.enable": true
+}
