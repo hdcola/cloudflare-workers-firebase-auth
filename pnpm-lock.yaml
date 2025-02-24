@@ -23,6 +23,9 @@ importers:
       hono:
         specifier: ^4.7.2
         version: 4.7.2
+      miniflare:
+        specifier: ^3.20250214.0
+        version: 3.20250214.0
       npm-run-all:
         specifier: ^4.1.5
         version: 4.1.5
